@@ -1,0 +1,149 @@
+:root {
+    /* Neutros — escala base do tema dark */
+    --white: #fff;
+    --gray-100: #e1e1e6;
+    --gray-300: #c4c4cc;
+    --gray-400: #8d8d99;
+    --gray-600: #323238;
+    --gray-700: #29292e;
+    --gray-800: #202024;
+    --gray-900: #121214;
+
+    /* Azul institucional AEAH (cor de destaque principal) */
+    --blue-100: #e2edf6;
+    --blue-300: #4d8fc9;
+    --blue-500: #0a4074;
+    --blue-600: #08345f;
+    --blue-700: #062849;
+    --blue-900: #031424;
+
+    /* Vermelho institucional AEAH (cor de ação / alerta) */
+    --red-300: #f78d97;
+    --red-500: #cf192d;
+    --red-600: #b51122;
+
+    /* Semânticos */
+    --bg: var(--gray-900);
+    --bg-elevated: var(--gray-800);
+    --bg-surface: var(--gray-700);
+    --border: var(--gray-700);
+    --border-strong: var(--gray-600);
+    --text: var(--gray-300);
+    --text-strong: var(--gray-100);
+    --text-muted: var(--gray-400);
+    --accent: var(--blue-300);
+    --accent-solid: var(--blue-500);
+    --accent-solid-hover: var(--blue-600);
+    --action: var(--red-500);
+    --action-hover: var(--red-600);
+
+    /* Tipografia */
+    --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+    --font-display: "Outfit", "Inter", sans-serif;
+    --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+    /* Raios e sombras */
+    --radius-sm: 8px;
+    --radius: 12px;
+    --radius-lg: 16px;
+    --radius-xl: 24px;
+    --shadow-md: 0 4px 12px rgb(0 0 0 / 0.3);
+    --shadow-lg: 0 12px 32px rgb(0 0 0 / 0.4);
+
+    /* Layout */
+    --container: 1180px;
+}
+
+:focus {
+    outline: transparent;
+    box-shadow: 0 0 0 2px var(--blue-500);
+}
+
+:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button,
+select {
+    font: 400 1rem var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    color: var(--text-strong);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    background: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+::selection {
+    background: var(--blue-500);
+    color: var(--white);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    50% {
+        opacity: 0.4;
+    }
+}
