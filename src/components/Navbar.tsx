@@ -39,8 +39,7 @@ export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
           className={styles.brand}
           onClick={() => handleItemClick('home')}
         >
-          
-          <img src={logoaeah} alt="Logo do ignite"></img>
+          <img src={logoaeah} alt="Logo da AEAH"/>
           <span className={styles.brandText}>
             <span className={styles.brandName}>
               <span className={styles.brandCity}>Hortolândia</span>
