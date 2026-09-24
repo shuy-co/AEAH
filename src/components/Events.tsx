@@ -14,6 +14,7 @@ import type { AssociationEvent } from '../types'
 import section from './section.module.css'
 import styles from './Events.module.css'
 import pagecurso from '../assets/PAGE_CURSO.png'
+import creaJovem from '../assets/CREA_JOVEM.png'
 
 const STORAGE_KEY = 'aeah_registered_events'
 
@@ -35,7 +36,23 @@ const EVENTS: AssociationEvent[] = [
     price: 'Gratuito (Aberto ao Público)',
     speaker: 'EKesley Luís Moraes - Engenheiro Ambiental',
     registrationLink: 'https://hortolandia.portalsca.com.br/',
+  },{
+    id: 'e2',
+    title: 'Inscrições abertas para o XIII Encontro Estadual Crea-SP Jovem',
+    description:
+      'A Comissão Crea-SP Jovem aproveitou o CDER-SP, realizado em 21/09 na Sede Angélica do Conselho, para anunciar aos representantes das entidades de classe a nova edição do maior encontro de jovens profissionais das Engenharias, Agronomia e Geociências do estado. O 13º ano do evento está marcado para o dia 29 de outubro e as inscrições já podem ser feitas aqui. “É um privilégio contar com as entidades de classe na realização de mais um Encontro Estadual. Afinal, o trabalho que exercemos no Conselho e junto às instituições de ensino para preparar estudantes e jovens profissionais para o mercado de trabalho, aproximando-os do nosso ecossistema, tem participação fundamental das associações”, disse a coordenadora da Comissão do Crea-SP Jovem, Eng. Agr. Marilia Gregolin. ',
+    date: '29 de outubro, 2026',
+    time: 'dia todo',
+    location: 'Sede do Crea-SP - Avenida Angélica, 2364 – Consolação',
+    image: creaJovem,
+    capacity: 120,
+    registeredCount: 84,
+    category: 'Workshop',
+    price: 'Gratuito (Aberto ao Público)',
+    speaker: 'EKesley Luís Moraes - Engenheiro Ambiental',
+    registrationLink: 'https://creajovem.com/encontro-crea-jovem/',
   },
+
 ]
 
 type RegStatus = 'idle' | 'loading' | 'success'
